@@ -1,8 +1,8 @@
 import React from 'react';
 
-function Button (){
+function Button ({wish, removedWish}){
 return(
-    <button className="button">remove</button>
+    <button className="button" onClick={() => deleteTask(wish)}>{removedWish}</button>
 )
 }
 

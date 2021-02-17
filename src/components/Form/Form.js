@@ -5,12 +5,12 @@ const initialState = {
 }
 
 function Form ({onSubmit}){
-    const [formState, setFormState] = React.useState(initialState);
+    const [state, setFormState] = React.useState(initialState);
 
-    const handleChange = ({ target }) => {
+    const handleChange = ({ wish }) => {
         setFormState({
-            ...formState,
-            [target.name]: target.value
+            ...State,
+            [wish.name]: wish.value
         });
     };
 

@@ -1,9 +1,9 @@
 import React from 'react';
 
-function ListItem(props){
+function ListItem({wish}){
     return (
     <div className="card">
-        <h2>coucou</h2>
+        <h2>{wish}</h2>
     </div>
     )
 }
